@@ -3,17 +3,17 @@ document.body.style.color = "#fff";
 
 document.write("<h1>Magic Square</h1>");
 
-document.write('<input id="matrixSize1" type="text"/>');
-document.write('<input id="matrixSize2" type="text"/>');
-document.write('<input id="matrixSize3" type="text"/>');
+document.write('<input id="matrixSize1" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize2" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize3" type="number" pattern="\d*"/>');
 document.write("<br>");
-document.write('<input id="matrixSize4" type="text"/>');
-document.write('<input id="matrixSize5" type="text"/>');
-document.write('<input id="matrixSize6" type="text"/>');
+document.write('<input id="matrixSize4" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize5" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize6" type="number" pattern="\d*"/>');
 document.write("<br>");
-document.write('<input id="matrixSize7" type="text"/>');
-document.write('<input id="matrixSize8" type="text"/>');
-document.write('<input id="matrixSize9" type="text"/>');
+document.write('<input id="matrixSize7" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize8" type="number" pattern="\d*"/>');
+document.write('<input id="matrixSize9" type="number" pattern="\d*"/>');
 document.write("<br>");
 document.write('<button onclick="go()" type="submit">Find out</button>');
 
