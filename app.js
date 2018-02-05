@@ -41,9 +41,3 @@ var vishal = function() {
     console.log('hi');
 }
 vishal();
-
-var get_on_board = document.getElementsByClassName('get_on_board');
-var get_on_thank_you = document.getElementsByClassName('get_on_thank_you');
-function show_thankyou() {
-    get_on_board.css = "display:none"; 
-}
