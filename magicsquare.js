@@ -1,9 +1,7 @@
 document.body.style.backgroundColor = "#333";
 document.body.style.color = "#fff";
 
-document.write("<br>");
-document.write("<br>");
-document.write("<br>");
+document.write("<h1>Magic Square</h1>");
 
 document.write('<input id="matrixSize1" type="text"/>');
 document.write('<input id="matrixSize2" type="text"/>');
@@ -17,7 +15,7 @@ document.write('<input id="matrixSize7" type="text"/>');
 document.write('<input id="matrixSize8" type="text"/>');
 document.write('<input id="matrixSize9" type="text"/>');
 document.write("<br>");
-document.write('<button onclick="go()" type="submit">Go</button>');
+document.write('<button onclick="go()" type="submit">Find out</button>');
 
 var doc = {};
 var array = [];
@@ -77,7 +75,7 @@ function go() {
     sum = 0;
     
     if(isMagic){
-        result = "This a magic square";
+        result = "This is a magic square";
     }else{
         result = "This is not a magic square";
     }
@@ -90,10 +88,4 @@ function go() {
 }
 
 
-document.write(`<div id='result' style='
-    background:#fff;
-    color:#333;
-    display:inline-block;
-    border-radius:5px;
-    padding:5px 15px;
-    margin:15px;'>Evaluating...</div>`);
+document.write("<div id='result'>Please enter values...</div>");
