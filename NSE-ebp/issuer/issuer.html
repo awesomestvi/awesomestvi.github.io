@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+		<meta content="EBP" name="description">
+		<meta content="EBP" name="author">
+		<title>EBP</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+		<link href="../assets/css/fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+		<link href="../assets/css/core.css" rel="stylesheet">
+		<link href="../assets/css/custom.css" rel="stylesheet">
+		<script src="../assets/js/jquery-1.11.1.min.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="page-body">
+		<div class="page-container">
+			<div class="sidebar-menu toggle-others collapsed">
+				<div class="sidebar-menu-inner">
+					<header class="logo-env">
+						<!-- logo -->
+						<div class="mobile-menu-toggle visible-xs">
+							<a data-toggle="mobile-menu" class="mobile_menu" href="#"><i class="fa-bars"></i></a>
+						</div>
+						<div class="logo">
+							<a class="" href="index.html"><h1>EBP</h1></a>
+						</div>
+						<div class="mobile_view dropdown user-profile visible-xs">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="user-image" class="img-circle img-inline userpic-32" src="../assets/images/user.jpg">
+								<span><i class="fa-angle-down"></i></span>
+							</a>
+							<ul class="dropdown-menu user-profile-menu list-unstyled">
+								<li>
+									<a href="#edit-profile"><i class="fa-edit"></i> New Post</a>
+								</li>
+								<li>
+									<a href="#settings"><i class="fa-wrench"></i> Settings</a>
+								</li>
+								<li>
+									<a href="#profile"><i class="fa-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="#help"><i class="fa-info"></i> Help</a>
+								</li>
+								<li class="last">
+									<a href="login.html"><i class="fa-lock"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</header>
+                    <ul class="main-menu" id="main-menu">
+						<li class="">
+							<a href="index.html"><i class="sd_icon home_icon"></i><span class="title">Home</span></a>
+						</li>
+						<li class="">
+							<a href="bidbook.html"><i class="sd_icon second_icon"></i><span class="title">My Bids</span></a>
+						</li>
+						<li class="active">
+							<a href="issuer.html"><i class="sd_icon fourth_icon"></i><span class="title">Issue Master</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><i class="sd_icon third_icon"></i><span class="title">User Setup</span></a>
+						</li>
+                    </ul>
+				</div>
+			</div>
+			<div class="main-content">				
+				<nav class="navbar user-info-navbar fixed" role="navigation">
+					<ul class="welcome_side user-info-menu left-links list-inline list-unstyled">
+						<li class="hidden-xs">
+							<a data-toggle="sidebar" class="mobile_menu" href="#"><i class="fa-bars"></i></a>
+						</li>
+						<li class="hidden-xs">
+							<h2>Welcome <strong>Issuer</strong></h2>
+						</li>
+					</ul>
+					<ul class="user-info-menu right-links list-inline list-unstyled">
+						<li class="dropdown user-profile">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa-bell-o"></i> <span class="badge badge-red">3</span></a>
+						</li>
+						<li class="dropdown user-profile">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="user-image" class="img-circle img-inline userpic-32" src="../assets/images/user.jpg" width="28">
+								<span>Rahul Sharma <i class="fa-angle-down"></i></span>
+							</a>
+							<ul class="dropdown-menu user-profile-menu list-unstyled">
+								<li>
+									<a href="#edit-profile"><i class="fa-edit"></i> New Post</a>
+								</li>
+								<li>
+									<a href="#settings"><i class="fa-wrench"></i> Settings</a>
+								</li>
+								<li>
+									<a href="#profile"><i class="fa-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="#help"><i class="fa-info"></i> Help</a>
+								</li>
+								<li class="last">
+									<a href="login.html"><i class="fa-lock"></i> Logout</a>
+								</li>
+							</ul>
+						</li>						
+					</ul>
+				</nav>
+				<section>
+					<div class="section-title clearfix">
+						<h2 class="">Issue Master</h2>
+					</div>
+					<div class="panel panel-default placebids">
+						<form action="" class="form-horizontal">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-1">Security Type</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="field-1" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-2">Issue Name</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="field-2" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-3">Type of Placement</label>
+										<div class="col-sm-8">
+											<select class="form-control" id="field-3" name="">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-4">Approval Status</label>
+										<div class="col-sm-8">
+											<select class="form-control" id="field-4" name="">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-5">Security Name</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="field-5" placeholder="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-6">Issue</label>
+										<div class="col-sm-8">
+											<select class="form-control" id="field-6" name="">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-7">Book Type</label>
+										<div class="col-sm-8">
+											<select class="form-control" id="field-7" name="">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-4 control-label" for="field-8">Bidding Status</label>
+										<div class="col-sm-8">
+											<select class="form-control" id="field-8" name="">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form_btn">
+								<button class="btn btn_lg solid_blue_btn">Submit</button>
+								<button class="btn btn_lg border_blue_btn">Reset</button>
+							</div>
+						</form>
+					</div>
+					<div class="filter-block clearfix">
+						<div class="">
+							<a class="left_links" href="javascript:;"><span class="glyphicon glyphicon-sort"></span> Sort</a>
+							<a class="left_links" href="javascript:;"><span class="glyphicon glyphicon-filter"></span> Filter</a>
+							<span class="right_links">
+								<a class="" href="addnewissue.html"><span class="glyphicon glyphicon-plus-sign"></span> Add New</a>
+							</span>
+						</div>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane panel panel-default active" id="tab1">
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-10 col-sm-12">
+									<div class="panel-heading mybids_heading">
+										<h3 class="panel-title">User Details</h3>
+									</div>
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Security Type</td>
+													<td class="table-content">ST</td>
+												</tr>
+												<tr>
+													<td class="table-header">Security Name</td>
+													<td class="table-content">GOIBOND</td>
+												</tr>
+												<tr>
+													<td class="table-header">Issue Name</td>
+													<td class="table-content">8.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Issuer</td>
+													<td class="table-content">Issuer No 1</td>
+												</tr>
+												<tr>
+													<td class="table-header">Type of Placement</td>
+													<td class="table-content">New Issue</td>
+												</tr>
+												<tr>
+													<td class="table-header">Book Type</td>
+													<td class="table-content">Close</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Approval Status</td>
+													<td class="table-content">Approved</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Status</td>
+													<td class="table-content">Pending</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Start Time</td>
+													<td class="table-content">07-03-2016 10:00:00</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Stop Time</td>
+													<td class="table-content">07-03-2016 10:00:00</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="tab_action_links_wrap inGrid clearfix">
+										<ul class="tab_action_links list-unstyled list-inline">
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-right"></span> Submit</a></li>
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-left"></span> Return</a></li>
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-file"></span> Logs</a></li>
+											<li><a href="javascript:;"><div class="icon3"></div>Exp Alloc</a></li>
+											<li><a href="javascript:;"><div class="icon4"></div>IMP Alloc</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-2 action_links col-sm-12">
+									<div class="hidden-xs hidden-sm text-center mybids_heading panel-heading">
+										<h3 class="panel-title">Actions</h3>
+									</div>
+									<div class="text-center check_box">
+										&nbsp;
+									</div>
+									<div class="text-center icon_links">
+										<a class="" href="javascript:;"><span class="glyphicon glyphicon-pencil"></span></a>
+										<a class="" href="javascript:;"><span class="glyphicon glyphicon-trash"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-10 col-sm-12">
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Security Type</td>
+													<td class="table-content">ST</td>
+												</tr>
+												<tr>
+													<td class="table-header">Security Name</td>
+													<td class="table-content">GOIBOND</td>
+												</tr>
+												<tr>
+													<td class="table-header">Issue Name</td>
+													<td class="table-content">8.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Issuer</td>
+													<td class="table-content">Issuer No 1</td>
+												</tr>
+												<tr>
+													<td class="table-header">Type of Placement</td>
+													<td class="table-content">New Issue</td>
+												</tr>
+												<tr>
+													<td class="table-header">Book Type</td>
+													<td class="table-content">Close</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Approval Status</td>
+													<td class="table-content">Approved</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Status</td>
+													<td class="table-content">Pending</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Start Time</td>
+													<td class="table-content">07-03-2016 10:00:00</td>
+												</tr>
+												<tr>
+													<td class="table-header">Bidding Stop Time</td>
+													<td class="table-content">07-03-2016 10:00:00</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="tab_action_links_wrap inGrid clearfix">
+										<ul class="tab_action_links list-unstyled list-inline">
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-right"></span> Submit</a></li>
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-left"></span> Return</a></li>
+											<li><a href="javascript:;"><span class="glyphicon glyphicon-file"></span> Logs</a></li>
+											<li><a href="javascript:;"><div class="icon3"></div>Exp Alloc</a></li>
+											<li><a href="javascript:;"><div class="icon4"></div>IMP Alloc</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-2 action_links col-sm-12">
+									<div class="text-center check_box">
+										&nbsp;
+									</div>
+									<div class="text-center icon_links">
+										<a class="" href="javascript:;"><span class="glyphicon glyphicon-pencil"></span></a>
+										<a class="" href="javascript:;"><span class="glyphicon glyphicon-trash"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane panel panel-default" id="tab2">
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-12 col-sm-12">
+									<div class="panel-heading mybids_heading">
+										<h3 class="panel-title">Bid Details</h3>
+									</div>
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Bid no.</td>
+													<td class="table-content">2</td>
+												</tr>
+												<tr>
+													<td class="table-header">Value</td>
+													<td class="table-content">110</td>
+												</tr>
+												<tr>
+													<td class="table-header">Yield</td>
+													<td class="table-content">6.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Participant</td>
+													<td class="table-content">PA0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Placed by</td>
+													<td class="table-content">Ar0001</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane panel panel-default" id="tab3">
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-12 col-sm-12">
+									<div class="panel-heading mybids_heading">
+										<h3 class="panel-title">Bid Details</h3>
+									</div>
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Bid no.</td>
+													<td class="table-content">2</td>
+												</tr>
+												<tr>
+													<td class="table-header">Value</td>
+													<td class="table-content">110</td>
+												</tr>
+												<tr>
+													<td class="table-header">Yield</td>
+													<td class="table-content">6.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Participant</td>
+													<td class="table-content">PA0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Placed by</td>
+													<td class="table-content">Ar0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Offer Yield</td>
+													<td class="table-content">Sample Value</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane panel panel-default" id="tab4">
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-12 col-sm-12">
+									<div class="panel-heading mybids_heading">
+										<h3 class="panel-title">Bid Details</h3>
+									</div>
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Bid no.</td>
+													<td class="table-content">2</td>
+												</tr>
+												<tr>
+													<td class="table-header">Value</td>
+													<td class="table-content">110</td>
+												</tr>
+												<tr>
+													<td class="table-header">Yield</td>
+													<td class="table-content">6.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Participant</td>
+													<td class="table-content">PA0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Placed by</td>
+													<td class="table-content">Ar0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Offer Yield</td>
+													<td class="table-content">Sample Value</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Offer Yield</td>
+													<td class="table-content">Sample Value</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane panel panel-default" id="tab5">
+							<div class="row table-row"> <!-- Table Row 1 -->
+								<div class="col-md-12 col-sm-12">
+									<div class="panel-heading mybids_heading">
+										<h3 class="panel-title">Bid Details</h3>
+									</div>
+									<div class="row horiz_table table-row">
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Bid no.</td>
+													<td class="table-content">2</td>
+												</tr>
+												<tr>
+													<td class="table-header">Value</td>
+													<td class="table-content">110</td>
+												</tr>
+												<tr>
+													<td class="table-header">Yield</td>
+													<td class="table-content">6.5</td>
+												</tr>
+											</table>
+										</div>
+										<div class="col-md-4">
+											<table class="table">
+												<tr>
+													<td class="table-header">Participant</td>
+													<td class="table-content">PA0001</td>
+												</tr>
+												<tr>
+													<td class="table-header">Placed by</td>
+													<td class="table-content">Ar0001</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="main-footer sticky footer-type-1">
+					<div class="footer-inner">
+						<div class="footer-text">
+                            Copyright &copy; 2016 National Stock Exchange of India Ltd. All right reserved.
+						</div>
+					</div>
+				</footer>
+			</div>			
+		</div>
+		<div class="page-loading-overlay">
+			<div class="loader-2"></div>
+		</div>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/resizeable.js"></script>
+		<script src="../assets/js/widgets.js"></script>
+		<script src="../assets/js/joinable.js"></script>
+		<script src="../assets/js/toggles.js"></script>
+		<script src="../assets/js/custom.js"></script>
+	</body>
+</html>

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.redpeppermedia.in$ [NC]
+RewriteRule ^(.*)$ http://www.redpeppermedia.in/$1 [L,R=301]

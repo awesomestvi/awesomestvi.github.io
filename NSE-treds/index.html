@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="NSE Treds | Dashboard" name="description">
+		<meta content="NSE" name="author">
+		<title>NSE - Treds</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" id="style-resource-1" rel="stylesheet" type="text/css">
+		<link href="assets/css/fonts/linecons/css/linecons.css" id="style-resource-2" rel="stylesheet">
+		<link href="assets/css/fonts/fontawesome/css/font-awesome.min.css" id="style-resource-3" rel="stylesheet">
+		<link href="assets/css/bootstrap.css" id="style-resource-4" rel="stylesheet">
+		<link href="assets/css/core.css" id="style-resource-5" rel="stylesheet">
+		<link href="assets/css/forms.css" id="style-resource-6" rel="stylesheet">
+		<link href="assets/css/components.css" id="style-resource-7" rel="stylesheet">
+		<link href="assets/css/skins.css" id="style-resource-8" rel="stylesheet">
+		<link href="assets/css/custom.css" id="style-resource-9" rel="stylesheet">
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="page-body">
+		<div class="page-container">
+			<div class="sidebar-menu toggle-others">
+				<div class="sidebar-menu-inner">
+					<header class="logo-env">
+						<!-- logo -->
+						<div class="mobile-menu-toggle visible-xs">
+							<a data-toggle="mobile-menu" href="#"><i class="fa-bars"></i></a>
+						</div>
+						<div class="logo">
+							<a class="logo-expanded" href="index.html">
+								<img alt="" src="assets/images/logo%402x.png" height="43">
+							</a>
+							<a class="logo-collapsed" href="index.html">
+								<img alt="" src="assets/images/logo-collapsed%402x.png" width="43">
+							</a>
+						</div>
+						<div class="mobile_view dropdown user-profile visible-xs">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="user-image" class="img-circle img-inline userpic-32" src="assets/images/user-4.png">
+								<span><i class="fa-angle-down"></i></span>
+							</a>
+							<ul class="dropdown-menu user-profile-menu list-unstyled">
+								<li>
+									<a href="#edit-profile"><i class="fa-edit"></i> New Post</a>
+								</li>
+								<li>
+									<a href="#settings"><i class="fa-wrench"></i> Settings</a>
+								</li>
+								<li>
+									<a href="#profile"><i class="fa-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="#help"><i class="fa-info"></i> Help</a>
+								</li>
+								<li class="last">
+									<a href="extra/lockscreen/index.html"><i class="fa-lock"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</header>
+					<ul class="main-menu" id="main-menu">
+						<li class="active">
+							<a href="index.html"><i class="sd_icon home_icon"></i><span class="title">Home</span></a>
+						</li>
+						<li class="">
+							<a href="javascript:;"><i class="sd_icon instrument_icon"></i><span class="title">Instruments Management</span></a>
+							<ul>
+								<li>
+									<a href="instruments.html"><span class="title">Instruments</span></a>
+								</li>
+								<li class="">
+									<a href="javascript:;"><span class="title">For Checking</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><span class="title">Counter Approvals</span></a>
+								</li>								
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;"><i class="sd_icon auction_icon"></i><span class="title">Auctions & Settlement</span></a>
+							<ul>
+								<li>
+									<a href="javascript:;"><span class="title">Auctions</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><span class="title">Settlements</span></a>
+								</li>								
+							</ul>
+						</li>						
+						<li>
+							<a href="javascript:;"><i class="sd_icon setting_icon"></i><span class="title">Settings</span></a>
+							<ul>
+								<li>
+									<a href="javascript:;"><span class="title">Entity Profile</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><span class="title">User Profile</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><span class="title">Buyer Seller Link</span></a>
+								</li>
+								<li>
+									<a href="javascript:;"><span class="title">Holiday Calendar</span></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;"><i class="sd_icon admin_icon"></i><span class="title">Administration</span></a>
+							<ul>
+								<li>
+									<a href="javascript:;"><span class="title">User Setup</span></a>
+								</li>								
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-content">				
+				<nav class="navbar user-info-navbar fixed" role="navigation">
+					<ul class="welcome_side user-info-menu left-links list-inline list-unstyled">
+						<li class="hidden-xs">
+							<a data-toggle="sidebar" href="#"><i class="fa-bars"></i></a>
+						</li>
+						<li class="hidden-xs">
+							<h2>Welcome <strong>Capital Enterprise</strong></h2>
+						</li>
+					</ul>
+					<ul class="user-info-menu right-links list-inline list-unstyled">
+						<li class="dropdown hover-line">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Is a Seller <i class="fa-angle-down"></i></a>
+						</li>
+						<li class="dropdown hover-line">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin <i class="fa-angle-down"></i></a>
+						</li>
+						<li class="dropdown user-profile">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa-bell-o"></i> <span class="badge badge-red">3</span></a>
+						</li>
+						<li class="dropdown user-profile">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<img alt="user-image" class="img-circle img-inline userpic-32" src="assets/images/user-4.png" width="28">
+								<span>Kamal Shah <i class="fa-angle-down"></i></span>
+							</a>
+							<ul class="dropdown-menu user-profile-menu list-unstyled">
+								<li>
+									<a href="#edit-profile"><i class="fa-edit"></i> New Post</a>
+								</li>
+								<li>
+									<a href="#settings"><i class="fa-wrench"></i> Settings</a>
+								</li>
+								<li>
+									<a href="#profile"><i class="fa-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="#help"><i class="fa-info"></i> Help</a>
+								</li>
+								<li class="last">
+									<a href="extra/lockscreen/index.html"><i class="fa-lock"></i> Logout</a>
+								</li>
+							</ul>
+						</li>						
+					</ul>
+				</nav>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						// Pageview Stats
+						$('#pageviews-stats').dxBarGauge({
+							startValue: -50,
+							endValue: 50,
+							baseValue: 0,
+							values: [20, -35, 10, -10],
+							label: {
+								customizeText: function(arg) {
+									return arg.valueText + '';
+								}
+							},
+							palette: ['#68b828', '#7c38bc', '#0e62c7', '#fcd036', '#4fcdfc', '#00b19d', '#ff6264', '#f7aa47'],
+							margin: {
+								top: 0
+							}
+						});
+					});
+				</script>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="panel panel-default progress_box">
+							<div class="panel-body">
+								<div>
+									<h2>06 <small>In Auction</small></h2>
+									<div class="progress">
+										<div class="progress-bar blue-color" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">20% Complete (success)</span>
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2>10 <small>Auctioned</small></h2>
+									<div class="progress">
+										<div class="progress-bar orange-color" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span class="sr-only">70% Complete (success)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="biscuit_panel panel panel-default navyblue-color">
+							<div class="panel-body">
+                            	<i class="droplets"><img src="assets/images/droplet1.png" alt=""></i>
+								<h2>10</h2>
+                                <small class="inbox_text">Inbox</small>                                
+							</div>
+						</div>
+						<div class="biscuit_panel panel panel-default persiangreen-color">
+							<div class="panel-body">
+								<i class="droplets"><img src="assets/images/droplet2.png" alt=""></i>
+								<h2>08</h2>
+                                <small>Ready for Auction</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="biscuit_panel panel panel-default red-color">
+							<div class="panel-body">
+								<i class="droplets"><img src="assets/images/droplet3.png" alt=""></i>
+								<h2>10</h2>
+                                <small>Checker Pending</small>
+							</div>
+						</div>
+						<div class="biscuit_panel panel panel-default purple-color">
+							<div class="panel-body">
+								<i class="droplets"><img src="assets/images/droplet4.png" alt=""></i>
+								<h2>08</h2>
+                                <small>Counter Pending</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="panel chart_block panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Obligations - Receivables</h3>
+							</div>
+							<div class="panel-body no_padding">
+								<div class="chart-item-bg">
+									<div id="pageviews-stats" style="height:350px;"></div>
+									<div class="row obligations_gauge">
+										<div class="col-sm-3 col-xs-6">
+											<div class="palette-color1">
+												<label>04 <span>Received</span></label>
+												<label>02 <span>Pending</span></label>
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<div class="palette-color2">
+												<label>04 <span>Received</span></label>
+												<label>02 <span>Pending</span></label>
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<div class="palette-color3">
+												<label>04 <span>Received</span></label>
+												<label>02 <span>Pending</span></label>
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<div class="palette-color4">
+												<label>04 <span>Received</span></label>
+												<label>02 <span>Pending</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="panel chart_block panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Auction Calendar</h3>
+							</div>
+							<div class="panel-body no_padding">
+								<div class="table-responsive">
+									<table class="rwd-table table responsive">
+										<thead>
+											<tr>
+												<th>Auction Date</th>
+												<th>Status</th>
+												<th>Start Time</th>
+												<th>End Time</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+											<tr>
+												<td data-th="Auction Date">26-APR-2016</td>
+												<td data-th="Status" >BIDDING</td>
+												<td data-th="Start Time" ><span class="text-success">9:00 AM</span></td>
+												<td data-th="End Time" ><span class="text-danger">22:00</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Recently Added Instruments</h3>
+							</div>
+							<div class="panel-body no_padding">
+								<div class="table-responsive">
+									<table class="rwd-table table responsive">
+										<thead>
+											<tr>
+												<th>Invoice Number</th>
+												<th>Invoice Date</th>
+												<th>Invoice Type</th>
+												<th>Buyer</th>
+												<th>Seller</th>
+												<th>Factoring Costing</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Recently Factored Instruments</h3>
+							</div>
+							<div class="panel-body no_padding">
+								<div class="table-responsive">
+									<table class="rwd-table table responsive">
+										<thead>
+											<tr>
+												<th>Invoice Number</th>
+												<th>Invoice Date</th>
+												<th>Invoice Type</th>
+												<th>Buyer</th>
+												<th>Seller</th>
+												<th>Factoring Costing</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+											<tr>
+												<td data-th="Invoice Number">DFFD4554</td>
+												<td data-th="Invoice Date">26-APR-2016</td>
+												<td data-th="Invoice Type">MATERIAL</td>
+												<td data-th="Buyer">R5465465</td>
+												<td data-th="Seller">S5465465</td>
+												<td data-th="Factoring Costing">1,00,000.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="main-footer sticky footer-type-1">
+					<div class="footer-inner">
+						<div class="footer-text">
+                            Copyright &copy; 2016 National Stock Exchange of India Ltd. All right reserved.
+						</div>
+					</div>
+				</footer>
+			</div>			
+		</div>
+		<div class="page-loading-overlay">
+			<div class="loader-2"></div>
+		</div>
+		<script id="script-resource-1" src="assets/js/bootstrap.min.js"></script> 
+		<script id="script-resource-2" src="assets/js/TweenMax.min.js"></script> 
+		<script id="script-resource-3" src="assets/js/resizeable.js"></script> 
+		<script id="script-resource-4" src="assets/js/joinable.js"></script> 
+		<script id="script-resource-5" src="assets/js/api.js"></script> 
+		<script id="script-resource-6" src="assets/js/toggles.js"></script> 
+		<script id="script-resource-7" src="assets/js/widgets.js"></script> 
+		<script id="script-resource-8" src="assets/js/devexpress-web-14.1x/js/globalize.min.js"></script> 
+		<script id="script-resource-9" src="assets/js/devexpress-web-14.1x/js/dx.chartjs.js"></script> 
+		<script id="script-resource-10" src="assets/js/toastr/toastr.min.js"></script>
+		<script id="script-resource-11" src="assets/js/custom.js"></script>
+	</body>
+</html>

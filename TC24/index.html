@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>    
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />		
+		<link rel="stylesheet" type="text/css" href="styles/tc24_styles.css" />		
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.color.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.transform-0.9.3-jq1.8fix.js"></script>
+		<script src="js/modernizr.js"></script>		
+		<script src="js/jquery.parallax.min.js"></script>    
+		<script src="js/jquery.transit.min.js"></script>    
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/icheck.min.js"></script>
+		<script src="js/jquery.popupoverlay.js"></script>    
+		<script src="js/tc24.js"></script>
+		<script src="js/allscripts.js"></script>
+		<script>
+			$(document).ready(function(){
+				var ww = $(window).width();
+				var limit = 768;			
+
+				function refresh(){
+					ww = $(window).width();
+					var w =  ww<limit ? (location.reload(true)) :  ( ww>limit ? (location.reload(true)) : ww=limit );
+				}
+
+				var tOut;
+				$(window).resize(function() {
+					var resW = $(window).width();
+					clearTimeout(tOut);					
+					if ((ww>limit && resW<limit) || (ww<limit && resW>limit) ) {        
+						tOut = setTimeout(refresh, 100);
+					}
+				});
+			});
+			new Main();
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="sidebar_menu visible-xs">
+				<div class="menu_wrapper">
+					<div class="mobile_logo"><a href="#blue"><img class="img-responsive" src="images/page0/logo.png"/></a></div>
+					<ul class="menu_list">
+						<li>
+							<a href="#orange">
+								<span class="first_line">Understand</span>
+								<span class="second_line">Others</span>
+							</a>
+						</li>
+						<li>
+							<a href="#green">
+								<span class="first_line">Discover</span>
+								<span class="second_line">Myself</span>
+							</a>
+						</li>
+						<li>
+							<a href="#gold">
+								<span class="first_line">How</span>
+								<span class="second_line">does it work?</span>
+							</a>
+						</li>
+						<li>
+							<a href="#services">
+								<span class="first_line">Explore</span>
+								<span class="second_line">Our Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#shop">
+								<span class="first_line">Online</span>
+								<span class="second_line">Store</span>
+							</a>
+						</li>
+						<li>
+							<a href="#footer">
+								<span class="first_line">Contact</span>
+								<span class="second_line">Us</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>		
+			<div class="mobile_view">			
+				<div class="page page0">
+					<div class="container relative">				
+						<div class="layer logo">
+							<div class=""><img class="loading" src="images/page0/loading.gif" /></div>
+							<img class="tc24_logo pT30" src="images/page0/logo.png"/>					
+						</div>
+					</div>
+				</div>			
+				<div class="page menu">
+					<div class="tc_bg_wrapper top_header">					
+						<div class="navbar navbar-fixed-top">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="mob_header">
+									<div class="top_slide blackbg">
+										<div class="container relative clearfix">
+											<div class="mobile_menu_logo visible-xs"><img class="tc24_logo" src="images/page0/logo.png"/></div>
+											<div class="Rtxt">
+												<ul class="hidden-xs tc_login">
+													<li><a href="about_us.html">About Us</a></li>
+													<li>|</li>							
+													<li class="tc_profile">
+														<img class="profile_pic" src="images/misc/profile_pic.jpg">
+														<a class="profile login_box_open" href="javascript:;">Login</a>
+													</li>
+													<li>|</li>
+													<li><a href="javascript:;">SIGN OUT</a></li>
+												</ul>
+												<ul class="visible-xs tc_login">												
+													<li class="user_icon"><a class="login_box_open" href="javascript:;"><img src="images/mobile/usericon.png"></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="top_slide top_menu">
+							<div class="container relative clearfix">
+								<div class="hidden-xs tc_menu_wrapper">
+									<table cellpadding="0" cellspacing="0" border="0" width="100%">
+										<tr class="tc_menu auto_nav">
+											<td width="230" valign="top" align="center" class="home_logo">
+												<a href="#blue">
+													<img width="145" src="images/page0/logo.png"/>
+												</a>
+											</td>
+											<td width="145" valign="top" align="left">
+												<a href="#orange">
+													<span class="first_line">Understand</span>
+													<span class="second_line">Others</span>
+												</a>
+											</td>
+											<td width="145" valign="top" align="left">
+												<a href="#green">
+													<span class="first_line">Discover</span>
+													<span class="second_line">Myself</span>
+												</a>
+											</td>
+											<td width="160" valign="top" align="left">
+												<a href="#gold">
+													<span class="first_line">How</span>
+													<span class="second_line">does it work?</span>
+												</a>
+											</td>
+											<td width="145" valign="top" align="left">
+												<a href="#services">
+													<span class="first_line">Explore</span>
+													<span class="second_line">Our Services</span>
+												</a>
+											</td>
+											<td width="22%" valign="top" align="left">
+												<a href="#shop">
+													<span class="first_line">Online</span>
+													<span class="second_line">Store</span>
+												</a>
+											</td>
+										</tr>
+									</table>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hidden-xs page circle_nav">
+					<ul class="tc_nav auto_nav">
+						<li><a class="active" href="#blue"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Blue</div--></li>
+						<li><a class="not_active" href="#orange"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Orange</div--></li>
+						<li><a class="not_active" href="#green"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Green</div--></li>
+						<li><a class="not_active" href="#gold"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Gold</div--></li>
+						<li><a class="not_active" href="#services"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Services</div--></li>
+						<li><a class="not_active" href="#shop"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Online Shop</div--></li>				
+						<li><a class="not_active" href="#footer"></a><!--div class="right_Arrow"></div><div class="tooltip_note">Contact Us</div--></li>			
+					</ul>			
+				</div>
+				
+				<div class="page page1">
+					<div class="layer background">				
+						<ul class="stars">
+							<li class="layer" data-depth="0.05"><img src="images/page1/stars.png"></li>						
+						</ul>
+						<div class="absolute top fullWidth">
+							<div class="parallax_center">
+								<ul class="stars">
+									<li class="layer" data-depth="0.10"><img src="images/page1/stars_big.png"></li>
+									<li class="layer" data-depth="0.15"><img src="images/page1/confetti.png"></li>
+								</ul>
+							</div>			
+						</div>				
+					</div>			
+					<div class="container relative">
+						<div class="layer hidden-xs mainCenter mainLeft">			
+							<div class="char hidden-xs char1"><img src="images/page1/char1.png"></div>
+							<div class="char hidden-xs char2"><img src="images/page1/char2_hovered.png"></div>
+							<div class="char hidden-xs char3"><img src="images/page1/char3.png"></div>
+							<div class="char hidden-xs char4"><img src="images/page1/char4.png"></div>						
+						</div>
+						<div class="visible-xs mainChar">			
+							<div class="char char1">
+								<img src="images/mobile/i_am_golden.png"/>
+								<div class="char_title">I am Gold!</div>
+								<div class="char_desc">
+									<ul>
+										<li>Responsible</li>
+										<li>Organized</li>
+										<li>Dependable</li>
+									</ul>
+								</div>
+							</div>
+							<div class="char char2 ">
+								<img src="images/mobile/i_am_orange.png"/>
+								<div class="char_title">I am Orange!</div>
+								<div class="char_desc">
+									<ul>
+										<li>Atheletic</li>
+										<li>Flexible</li>
+										<li>Playful</li>
+									</ul>
+								</div>
+							</div>
+							<div class="char char3">
+								<img src="images/mobile/i_am_blue.png"/>
+								<div class="char_title">I am Blue!</div>
+								<div class="char_desc">
+									<ul>
+										<li>Harmony</li>
+										<li>Relationships</li>
+										<li>Authentic</li>
+									</ul>
+								</div>
+							</div>
+							<div class="char char4">
+								<img src="images/mobile/i_am_green.png"/>
+								<div class="char_title">I am Green!</div>
+								<div class="char_desc">
+									<ul>
+										<li>Analytical</li>
+										<li>Intelligent</li>
+										<li>Conceptual</li>
+									</ul>
+								</div>
+							</div>						
+						</div>
+						<div class="layer main mainRight">
+							<div class="main_text">
+								<h1 class="">Celebrate <span class="mL10 disBlock">who you are</span></h1>
+								<article class="mL10 mB10">True Colors celebrates individual differences in a simple and effective language, enabling people to share positively and promote mutual understanding  at work, in school and in relationships</article>
+								<a class="know_more mL10 mB20 white_color disBlock" href="truecolors24.html">Know More</a>
+								<!--a class="tc_btn mL10" href="javascript:;">Take the Quiz</a-->
+							</div>
+						</div>
+						<div class="layer hidden-xs gift_layer">
+							<div class="gift_parachute tossing"></div>					
+						</div>
+					</div>			
+				</div>
+				
+				<div class="page page2">
+					<div class="layer background3">
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background2">
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background1">
+						<div class="hidden-xs absolute">
+							<ul class="grid_web">
+								<li class="layer" data-depth="0.10"><img class="relative grid1" src="images/page2/grid1.png"></li>
+								<li class="layer" data-depth="0.10"><img class="relative grid2" src="images/page2/grid2.png"></li>
+								<li class="layer" data-depth="0.10"><img class="relative grid3" src="images/page2/grid3.png"></li>
+								<li class="layer" data-depth="0.10"><img class="relative grid4" src="images/page2/grid4.png"></li>
+							</ul>
+						</div>
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>		
+					<div class="container relative">      
+						<div class="pageContent">
+							<div class="layer mainCenter">
+								<div class="hidden-xs tc_social_grid_wrapper">
+									<div class="social_ring jumbo_ring">
+										<img src="images/page2/green_jumbo_ring.png">
+									</div>
+									<div class="social_ring ring1">
+										<img src="images/page2/green_ring1.png">
+									</div>
+									<div class="social_ring ring2">
+										<img src="images/page2/green_ring2.png">
+									</div>
+									<div class="social_ring ring3">
+										<img src="images/page2/green_ring3.png">
+									</div>
+									<div class="social_ring ring4">
+										<img src="images/page2/green_ring4.png">
+									</div>
+									<div class="social_ring ring5">
+										<img src="images/page2/green_ring5.png">
+									</div>
+									<div class="social_ring ring6">
+										<img src="images/page2/green_ring6.png">
+									</div>
+									<div class="social_ring ring7">
+										<img src="images/page2/green_ring7.png">
+									</div>
+									<div class="line line1"></div>
+									<div class="line line2"></div>
+									<div class="line line3"></div>
+									<div class="line line4"></div>
+									<div class="line line5"></div>
+									<div class="line line6"></div>
+									<div class="line line7"></div>
+									<div class="line line8"></div>
+									<div class="line line9"></div>							
+								</div>
+								<div class="mobile_grid text-center visible-xs"><img src="images/mobile/Social_mobile.png"/></div>
+							</div>
+							<div class="layer mainLeft">
+								<div class="main_text">
+									<h1 class="">Social <span class="disBlock">Intelligence</span></h1>
+									<article class="white_color w250 mB10">We help you build exceptional workplaces that reflect the  diversity in human personality. Mindfulness begins with positive self-awareness and extends to mutual respect of others' values. We bring new age technology to the oldest issues at work - respect and empathy for others. </article>
+									<a class="know_more mB20 white_color disBlock" href="social_intelligence.html">Know More</a>							
+								</div>
+							</div>					
+						</div>
+					</div>
+				</div>
+
+				<div class="page page3">
+					<div class="layer background"></div>
+					<div class="layer hidden-xs header">
+						<div class="column columnRight">
+							<img src="images/page3/airplane.png">
+						</div>
+					</div>
+					<div class="container relative">
+						<div class="pageContent">
+							<div class="layer mainCenter">
+								<img src="images/page3/balloon_boy.png">
+							</div>
+							<div class="layer mainRight">
+								<div class="main_text">
+									<h1 class="">Discover <span class="disBlock mL5">Your True Colors</span></h1>
+									<article class="white_color mL7 mB10">Over the past 40 years, more than a million people have used the truecolors method to understand themselves better. We bring you the most advanced version of this proven tool to make it more comprehensive and immediately usable than ever before.</article>
+									<!--<a class="know_more mL7 mB20 white_color disBlock" href="javascript:;">Know More</a><br/>-->
+									<a class="tc_btn mL5" href="/take-quiz/nojs/take">Take the Quiz</a>
+								</div>
+							</div>				
+							<div class="layer hidden-xs mainLeft">
+								<div class="sky_green green_sun"><img src="images/page3/sun.png"/></div>
+								<div class="sky_green green_cloud1"><img src="images/page3/green_cloud.png"/></div>
+								<div class="sky_green green_cloud2"><img src="images/page3/white_cloud.png"/></div>
+								<div class="sky_green green_cloud3"><img src="images/page3/white_cloud.png"/></div>
+								<div class="layer sky_green air_ballon"><img src="images/page3/airballoon.png"/></div>
+							</div>					
+						</div>
+					</div>		
+				</div>
+					
+				<div class="page page4">
+					<div class="layer clouds1"></div>
+					<div class="layer background">
+						<div class="clouds2"></div>			
+					</div>
+					<div class="layer hidden-xs clouds3">
+						<div class="container relative">
+							<img class="cloud img1" src="images/clouds/1.png" />
+							<img class="cloud img2" src="images/clouds/2.png" />
+							<img class="cloud img3" src="images/clouds/3.png" />
+							<img class="cloud img4" src="images/clouds/4.png" />				
+						</div>
+					</div>
+					<div class="container relative">			
+						<div class="pageContent">
+							<div class="layer mainCenter">
+								<a href="truecolors_education.html">
+                                    <div class="cir1_wrapper">
+                                        <div>
+                                            <img class="cir hidden-xs cir1" src="images/page4/education.png"/>
+                                            <div class="visible-xs">
+                                                <img class="cir cir1" src="images/mobile/education.png"/>
+                                            </div>									
+                                        </div>
+                                        <div class="gold_text">In Your School</div>
+                                    </div>
+                                </a>
+                                <a href="truecolors_corporate.html">
+                                    <div class="cir2_wrapper">
+                                        <div>
+                                            <img class="cir hidden-xs cir2" src="images/page4/corporate.png"/>
+                                            <div class="visible-xs">
+                                                <img class="cir cir2" src="images/mobile/corporate.png"/>
+                                            </div>									
+                                        </div>
+                                        <div class="gold_text">At Your Workplace</div>
+                                    </div>
+                                </a>
+                               	<a href="true_lovestyles.html">
+                                    <div class="cir3_wrapper">
+                                        <div>
+                                            <img class="cir hidden-xs cir3" src="images/page4/relationship.png"/>
+                                            <div class="visible-xs">
+                                                <img class="cir cir3" src="images/mobile/relationship.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="gold_text">With Your Relationships</div>
+                                    </div>
+                              	</a>
+                               	<a href="true_enagement.html">
+                                    <div class="cir4_wrapper">
+                                        <div>
+                                            <img class="cir hidden-xs cir3" src="images/page4/relationship.png"/>
+                                            <div class="visible-xs">
+                                                <img class="cir cir3" src="images/mobile/relationship.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="gold_text">True Engagement</div>
+                                    </div>
+                                </a>
+							</div>
+							<div class="layer mainLeft">
+								<div class="main_text">
+									<h1 class="black_color mB20">How does it work?</h1>
+									<article class="mL5 mB10 autoWidth mR160 fLt">Truecolors has been widely used primarily in three contexts - at work, in school and at home. Click on a choice to learn more about how you can use it best</article>								
+									<div class="CL"></div>
+									<!--<a class="mL5 know_more black_color" href="javascript:;">Know More</a>-->
+									<div class="hidden-xs birds">
+										<div class="gold_birds bird1"><img src="images/page4/bird.png"/></div>
+										<div class="gold_birds bird2"><img src="images/page4/bird.png"/></div>
+									</div>
+								</div>
+							</div>
+							<div class="layer hidden-xs mainRight">
+								<div class="gold_balloon"><img src="images/page4/air_balloon.png"/></div>
+							</div>					
+						</div>
+					</div>
+				</div>
+
+				<div class="page page5">
+					<div class="layer background3">
+						<div class="shape">
+							<div class="waveContainer">
+								<div id="wave3" class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background2">
+						<div class="shape">
+							<div class="waveContainer">
+								<div id="wave2" class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background1">
+						<div class="shape">
+							<div class="waveContainer">
+								<div id="wave1" class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="container relative">
+						<div class="pageContent">					
+							<div class="layer hidden-xs mainLeft"></div>
+							<div class="layer hidden-xs mainRight">
+								<div class="fishes_serv">
+									<div class="fish fish1"><img src="images/page5/fish1.png"/></div>
+									<div class="fish fish2"><img src="images/page5/fish2.png"/></div>
+								</div>
+							</div>
+							<div class="layer mainCenter">
+								<div class="main_text mL20">
+									<h1 class="mB15">Services</h1>
+									<article class="white_color mB20 autoWidth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </article>							
+								</div>
+								<div class="container relative">								
+									<div class="tile_wrapper row mL20">
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<!--<a href="services.html#Top">=-->
+                                                <div class="tc_tiles absolute zindex10 bg_salmon">
+                                                    <div class="tile_header">Services</div>
+                                                    <div class="tile_desc">Live Show Keynote</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon1.png"></div>
+                                                </div>
+                                            <!--</a>-->
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#communication-workshop">
+                                                <div class="tc_tiles bg_dgreen">
+                                                    <div class="tile_header">Communication</div>
+                                                    <div class="tile_desc">Workshop</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon2.png"></div>
+                                                </div>
+                                            </a>
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#time-management">
+                                                <div class="tc_tiles bg_dgreen">
+                                                    <div class="tile_header">Leadership</div>
+                                                    <div class="tile_desc">Workshop</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon3.png"></div>
+                                                </div>
+											</a>
+                                        </div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#conflict-resolution">
+                                                <div class="tc_tiles bg_dblue">
+                                                    <div class="tile_header">conflict resolution</div>
+                                                    <div class="tile_desc">Workshop</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon4.png"></div>
+                                                </div>
+                                            </a>
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#team-dynammics">
+                                                <div class="tc_tiles bg_navy">
+                                                    <div class="tile_header">Team performance</div>
+                                                    <div class="tile_desc">Workshop</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon5.png"></div>
+                                                </div>
+                                            </a>
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#true-selling">
+                                                <div class="tc_tiles bg_yellow">
+                                                    <div class="tile_header">web application</div>
+                                                    <div class="tile_desc"></div>
+                                                    <div class="tile_icon"><img src="images/page5/icon5.png"></div>
+                                                </div>
+                                            </a>
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+                                        	<a href="services.html#teaching">
+                                                <div class="tc_tiles bg_maroon">
+                                                    <div class="tile_header">teaching styles</div>
+                                                    <div class="tile_desc">Workshop</div>
+                                                    <div class="tile_icon"><img src="images/page5/icon7.png"></div>
+                                                </div>
+                                            </a>
+										</div>					
+										<div class="col-xs-6 col-sm-4 col-md-3">
+											<div class="tc_tiles bg_orange">
+												<div class="tile_icon"></div>
+											</div>
+										</div>
+										<div class="CL"></div>
+									</div>							
+								</div>
+								<!--<a class="hidden-xs pg5_left_arrow" href="javascript:;"><img src="images/misc/left_arrow.png"></a>
+								<a class="hidden-xs pg5_right_arrow" href="javascript:;"><img src="images/misc/right_arrow.png"></a>-->
+							</div>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="page page6">
+					<div class="layer background">
+						<div class="deepseabed"></div>
+					</div>			
+					<div class="layer deepsea_rocks1">
+						<div class="relative"></div>
+					</div>
+					<div class="layer deepsea_rocks2">
+						<div class="relative">
+							<img class="rocks1" src="images/page6/rocks1.png" />
+							<img class="rocks2" src="images/page6/rocks3.png" />
+							<img class="rocks3" src="images/page6/rocks2.png" />
+						</div>
+					</div>
+					<div class="container relative">
+						<div class="pageContent">
+							<div class="layer mainCenter">
+								<div class="main_text mL20">
+									<h1 class="mB15">Online Store</h1>
+									<article class="white_color mB20 autoWidth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </article>							
+								</div>
+							</div>
+							<div class="layer mainRight">
+								<div class="row">
+                                	
+                                    <div class="card-section">
+                                        <div class="new_card_wrapper tc_gold_bg">
+                                            <div class="card_decor_top home_decore_top"></div>
+                                            <div class="card_content">
+                                                <div class="card_title   tc_gold_bg">Silver</div>
+                                                <div class="card_desc home_card_desc"><span>500</span><br>Facilitators 
+                                                <br><br><span>10,000</span><br>Users</div>
+                                                <div class="card_amt arial"><span class="uc-price"><span class="uc-price">$10</span></span></div>
+                                            </div>
+                                            <div class="card_subscription">
+                                                <div class="card_decor_left home_card_decor_left"></div>
+                                                <div class="card_decor_right home_card_decor_right"></div>
+                                                <span class="card_sub_btn123">
+                                                	<input class="list-add-to-cart form-submit" type="submit" id="edit-submit-36" name="op" value="Subscribe">
+                                                </span>
+                                            </div>
+                                            <div class="card_decor_bottom home_decore_bottom"></div>
+                                        </div>
+                                        
+                                        <div class="card_caption"><p>Silver Package details are here</p>
+                                        <a href="/content/silver">Know more</a></div>
+                                    </div>
+                                    
+                                    <div class="card-section">
+                                        <div class="new_card_wrapper tc_green_bg">
+                                            <div class="card_decor_top home_decore_top"></div>
+                                            <div class="card_content">
+                                                <div class="card_title tc_green_bg">Gold</div>
+                                                <div class="card_desc home_card_desc"><span>2,000</span><br>Facilitators 
+                                                <br><br><span>20,000</span><br>Users</div>
+                                                <div class="card_amt arial"><span class="uc-price"><span class="uc-price">$20</span></span></div>
+                                            </div>
+                                            <div class="card_subscription">
+                                                <div class="card_decor_left home_card_decor_left"></div>
+                                                <div class="card_decor_right home_card_decor_right"></div>
+                                                <span class="card_sub_btn123">
+                                                	<input class="list-add-to-cart form-submit" type="submit" id="edit-submit-36" name="op" value="Subscribe">
+                                                </span>
+                                            </div>
+                                            <div class="card_decor_bottom home_decore_bottom"></div>
+                                        </div>
+                                        
+                                        <div class="card_caption"><p>Silver Package details are here</p>
+                                        <a href="/content/silver">Know more</a></div>
+                                    </div>
+                                    
+                                    <div class="card-section">
+                                        <div class="new_card_wrapper tc_blue_bg">
+                                            <div class="card_decor_top home_decore_top"></div>
+                                            <div class="card_content">
+                                                <div class="card_title tc_blue_bg">PLATINUM</div>
+                                                <div class="card_desc home_card_desc"><span>500</span><br>Facilitators 
+                                                <br><br><span>10,000</span><br>Users</div>
+                                                <div class="card_amt arial"><span class="uc-price"><span class="uc-price">$100</span></span></div>
+                                            </div>
+                                            <div class="card_subscription">
+                                                <div class="card_decor_left home_card_decor_left"></div>
+                                                <div class="card_decor_right home_card_decor_right"></div>
+                                                <span class="card_sub_btn123">
+                                                	<input class="list-add-to-cart form-submit" type="submit" id="edit-submit-36" name="op" value="Subscribe">
+                                                </span>
+                                            </div>
+                                            <div class="card_decor_bottom home_decore_bottom"></div>
+                                        </div>
+                                        
+                                        <div class="card_caption"><p>Silver Package details are here</p>
+                                        <a href="/content/silver">Know more</a></div>
+                                    </div>
+                                    
+                                    <div class="card-section">
+                                        <div class="new_card_wrapper tc_orange_bg">
+                                            <div class="card_decor_top home_decore_top"></div>
+                                            <div class="card_content">
+                                                <div class="card_title tc_orange_bg">PLATINUM</div>
+                                                <div class="card_desc home_card_desc"><span>500</span><br>Facilitators 
+                                                <br><br><span>10,000</span><br>Users</div>
+                                                <div class="card_amt arial"><span class="uc-price"><span class="uc-price">$100</span></span></div>
+                                            </div>
+                                            <div class="card_subscription">
+                                                <div class="card_decor_left home_card_decor_left"></div>
+                                                <div class="card_decor_right home_card_decor_right"></div>
+                                                <span class="card_sub_btn123">
+                                                	<input class="list-add-to-cart form-submit" type="submit" id="edit-submit-36" name="op" value="Subscribe">
+                                                </span>
+                                            </div>
+                                            <div class="card_decor_bottom home_decore_bottom"></div>
+                                        </div>
+                                        
+                                        <div class="card_caption"><p>Silver Package details are here</p>
+                                        <a href="/content/silver">Know more</a></div>
+                                    </div>
+                                    
+                                </div>
+							</div>				
+							<div class="layer hidden-xs mainLeft">
+								<a href="/subscription"><img src="images/page6/sea_bed_rock.png"/></a>
+								<!--<a class="right_arrow" href="javascript:;"><img src="images/misc/right_arrow.png"></a>-->
+							</div>
+							<div class="layer hidden-xs creatures">
+								<!--img class="pg6_diver" src="images/diver.png"/-->
+								<img class="pg6_octo" src="images/page6/octopus.png"/>
+							</div>
+						</div>
+					</div>			
+				</div>
+
+				<div class="page page7">			
+					<div class="layer background3">
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background2">
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layer background1">
+						<div class="shape">
+							<div class="waveContainer">
+								<div class="wave"></div>
+							</div>
+						</div>
+					</div>
+					<div class="container relative">
+						<div class="layer mainCenter">			
+							<div class="tc_footer_content">			
+								<div class="pageContent">
+									<div class="tc_footer_head">
+										<div class="fLt logo"><img src="images/page0/logo.png"></div>
+										<div class="fRt">
+											<div class="social_box follow_us">
+												<div class="small_social_header">
+													Follow Us									
+												</div>
+												<div>
+													<a class="mR10 fLt" href="javascript:;"><img src="images/social_icons/facebook.gif"></a>
+													<a class="mR10 fLt" href="javascript:;"><img src="images/social_icons/twitter.gif"></a>
+													<a class="ovr_hidden" href="javascript:;"><img src="images/social_icons/arrow.gif"></a>
+												</div>
+											</div>
+											<div class="pL15 pR10 social_box">
+												<div class="small_social_header">US / Toll free No.</div>									
+												<div>
+													<div class="call_us_ico fLt"></div>
+													<div class="ovr_hidden fs24 white_color pT5 arial">878-532-8875</div>
+												</div>
+											</div>
+										</div>
+										<div class="CL"></div>
+									</div>
+									<div class="tc_footer_body mB20">						
+										<div class="fLt">
+											<div class="fb_heads">Quick Links</div>
+											<div class="grey_bg fb_box mw170">
+												<ul>
+													<li class="pT0"><a href="javascript:;">Clients</a></li>
+													<li><a href="javascript:;">Testimonial</a></li>
+													<li><a href="javascript:;">Resources</a></li>
+													<li><a href="javascript:;">Downloads</a></li>
+													<li><a href="javascript:;">Case Studies</a></li>
+													<li><a href="javascript:;">Research</a></li>
+													<li><a href="javascript:;">Contact Us</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="fLt hidden-xs">
+											<div class="fb_heads">Updates</div>
+											<div class="grey_bg fb_box mw380">
+												<img class="" src="images/footer/twitter_box.png">
+											</div>
+										</div>
+										<div class="ovr_hidden hidden-xs">
+											<div class="fb_heads">Blog Post</div>
+											<div class="grey_bg mR0 fb_box">
+												<img class="" src="images/footer/blog_box.png">
+											</div>
+										</div>
+									</div>					
+									<div class="CL"></div>							
+								</div>
+								<div class="hidden-xs tc_clients">
+									<div class="fb_heads fLt">Clients</div>
+									<ul>
+										<li class="mL0"><div><img src="images/clients/google.gif"/></div></li>
+										<li><div><img src="images/clients/ford.gif"/></div></li>
+										<li><div><img src="images/clients/disney.gif"/></div></li>
+										<li><div><img src="images/clients/boeing.gif"/></div></li>
+										<li><div><img src="images/clients/microsoft.gif"/></div></li>
+										<li><div><img src="images/clients/USPS.gif"/></div></li>
+										<li><div><img src="images/clients/imagination.gif"/></div></li>
+										<li><div><img src="images/clients/marriott.gif"/></div></li>
+										<li class="mR0 ovr_hidden"><div><img src="images/clients/shell.gif"/></div></li>
+									</ul>
+									<div class="CL"></div>
+								</div>
+								<div class="tc_copyright">					
+									<div class="tc_copyr_content">
+										<div class="fLt copy_right pL15">
+											<div class="reserved">Copyright © 2014 Don Lowry and Erica Echols Lowry. All Rights Reserved.</div>
+											<div>
+												<a class="" href="javascript:;">Privacy Policy</a> |
+												<a class="" href="javascript:;">Terms of Service</a> |
+												<a class="" href="javascript:;">Disclaimer</a>
+											</div>
+										</div>
+										<div class="fRt rpm_promo pR15">									
+											<div class="rpm_promote">Design & Developed by <a href="javascript:;" class="rpm_logo">Red Pepper Media</a></div>
+										</div>
+										<div class="CL"></div>
+									</div>
+								</div>						
+							</div>					
+						</div>
+					</div>			
+					<div class="layer mainBottom">
+						
+					</div>
+				</div>		
+				<div class="streacher"></div>
+			</div>
+		</div>
+		<div style="display:none;" id="login_box">
+			<div class="container login_box_wrapper">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-10">
+						<div class="login_wrapper"> 
+							<div class="popup_close login_box_close">
+								<a class="login_box_close" href="#"><img class="close_login" src="images/misc/close.png"/></a>
+							</div>
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="login_section">
+										<div class="login_text">Login to your TC24</div>
+										<div class="input_field">
+											<input type="text" class="text_box usr_ico" placeholder="User Name"/>
+										</div>
+										<div class="input_field">
+											<input type="password" class="text_box pss_ico" placeholder="Password"/>
+										</div>
+										<div class="frgt_box text-right">
+											<a href="javascript:;" class="frgt_btn">Forgot Password?</a> 
+										</div>
+										<div class="button_box">
+											<a href="#" class="main_button">Login</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="login_center_bdr">
+										<div class="login_or">
+											<div>OR</div>
+										</div>
+										<div class="center_line"></div>
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<div class="signup_section">
+										<div class="login_text">Login With your</div>
+										<div class="social_plugin">
+											<a href="javascript:;"><img src="images/misc/facebook.png"/></a>
+											<a href="javascript:;"><img src="images/misc/google.png"/></a>
+											<a href="javascript:;"><img src="images/misc/link_in.png"/></a>
+										</div>
+										<div class="hidden-xs">											
+											<div class="button_box">
+												<div class="clck_frgt">New User?</div>
+												<a href="#" class="main_button dis">Sign Up</a>
+											</div>
+										</div>
+									</div>
+								</div>													
+							</div>
+							<div class="hidden-xs need_help"><strong>Need help? Call</strong> 866-413-7883</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

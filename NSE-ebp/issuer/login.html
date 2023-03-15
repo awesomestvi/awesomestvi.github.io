@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+		<meta content="EBP" name="description">
+		<meta content="EBP" name="author">
+		<title>EBP</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+		<link href="../assets/css/fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../assets/css/bootstrap.css" rel="stylesheet">
+		<link href="../assets/css/core.css" rel="stylesheet">
+		<link href="../assets/css/components.css" rel="stylesheet">
+		<link href="../assets/css/custom.css" rel="stylesheet">
+		<script src="../assets/js/jquery-1.11.1.min.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="page-body login-page">
+		<div class="text-center login_header">
+			<h1>“It isn't the number <br/><small>of people employed in a business that makes it successful, it's the number working.”</small></h1>
+		</div>
+		<div class="login-container">
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					// Reveal Login form
+					setTimeout(function() {
+						$(".fade-in-effect").addClass('in');
+					}, 1);
+					// Validation and Ajax action
+					$("form#login").validate({
+						rules: {
+							username: {
+								required: true
+							},
+							passwd: {
+								required: true
+							}
+						},
+						messages: {
+							username: {
+								required: 'Please enter your username.'
+							},
+							passwd: {
+								required: 'Please enter your password.'
+							}
+						},
+						// Form Processing via AJAX
+						submitHandler: function(form) {
+							show_loading_bar(70); // Fill progress bar to 70% (just a given value)
+							var opts = {
+								"closeButton": true,
+								"debug": false,
+								"positionClass": "toast-top-full-width",
+								"onclick": null,
+								"showDuration": "300",
+								"hideDuration": "1000",
+								"timeOut": "5000",
+								"extendedTimeOut": "1000",
+								"showEasing": "swing",
+								"hideEasing": "linear",
+								"showMethod": "fadeIn",
+								"hideMethod": "fadeOut"
+							};
+							$.ajax({
+								url: "http://themes.laborator.co/xenon/data/login-check.php",
+								method: 'POST',
+								dataType: 'json',
+								data: {
+									do_login: true,
+									username: $(form).find('#username').val(),
+									passwd: $(form).find('#passwd').val(),
+								},
+								success: function(resp) {
+									show_loading_bar({
+										delay: .5,
+										pct: 100,
+										finish: function() {
+											// Redirect after successful login page (when progress bar reaches 100%)
+											if (resp.accessGranted) {
+												window.location.href = 'http://themes.laborator.co/xenon';
+											} else {
+												toastr.error(
+													"You have entered wrong password, please try again. User and password is <strong>demo/demo<\/strong> :)",
+													"Invalid Login!", opts);
+												$(form).find('#passwd').select();
+											}
+										}
+									});
+								}
+							});
+						}
+					});
+					// Set Form focus
+					$("form#login .form-group:has(.form-control):first .form-control").focus();
+				});
+			</script>
+			<div class="errors-container"></div>
+			<form class="login-form fade-in-effect" id="login" method="post" name="login" role="form">
+				<div class="login-header clearfix">
+					<a class="logo pull-left" href="javascript:;">EBP</a>
+					<div class="pull-right">
+						<span class="small_heading">Login</span>
+						<span class="next_line">in to your account</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="companyname">Company Name</label>
+					<input autocomplete="off" class="form-control" id="companyname" name="companyname" type="text">
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="userid">User ID</label>
+					<input autocomplete="off" class="form-control" id="userid" name="userid" type="text">
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="passwd">Password</label>
+					<input autocomplete="off" class="form-control" id="passwd" name="passwd" type="password">
+				</div>
+				<div class="form-group btn_block clearfix mB0">
+					<button class="btn solid_blue_btn" type="submit">Login</button>
+					<button class="btn border_blue_btn" type="submit">New Registration</button>
+				</div>
+				<div class="login-footer">
+					<a class="blue_color" href="#">Forgot your password?</a>
+				</div>
+			</form>
+			<div class="btm_login_box_wrap">
+				<a href="javascript:;" class="demo_block btm_login_box clearfix">
+					<div class="btm_login_icon"></div>
+					<div class="btm_login_text">
+						<div class="text_bold">Demo</div>
+						<div>How to use</div>
+					</div>
+				</a>
+				<a href="javascript:;" class="contact_block btm_login_box clearfix">
+					<div class="btm_login_icon"></div>
+					<div class="btm_login_text">
+						<div class="text_bold">Contact Us</div>
+						<div>1800 20 0012</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/resizeable.js"></script>
+		<script src="../assets/js/toastr.min.js"></script>
+		<script src="../assets/js/jquery.validate.min.js"></script>
+		<script src="../assets/js/custom.js"></script>
+	</body>
+</html>
