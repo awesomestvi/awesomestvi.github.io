@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "https://awesomestvi.github.io/MyKlader/static/css/main.3274915b.css",
+    "main.js": "https://awesomestvi.github.io/MyKlader/static/js/main.7704cbcf.js",
+    "static/media/opensans-regular-webfont.woff": "https://awesomestvi.github.io/MyKlader/static/media/opensans-regular-webfont.6c5acfa99c83633bb078.woff",
+    "static/media/opensans-semibold-webfont.woff": "https://awesomestvi.github.io/MyKlader/static/media/opensans-semibold-webfont.ad9bc43d5d0309e8bd2e.woff",
+    "static/media/opensans-light-webfont.woff": "https://awesomestvi.github.io/MyKlader/static/media/opensans-light-webfont.a6f9c2938492d41f8896.woff",
+    "static/media/opensans-bold-webfont.woff": "https://awesomestvi.github.io/MyKlader/static/media/opensans-bold-webfont.eb8f357f58267539eb7b.woff",
+    "static/media/opensans-regular-webfont.woff2": "https://awesomestvi.github.io/MyKlader/static/media/opensans-regular-webfont.3ef06ba3c7099e63c9ce.woff2",
+    "static/media/opensans-semibold-webfont.woff2": "https://awesomestvi.github.io/MyKlader/static/media/opensans-semibold-webfont.a7e5d5e944cf5e03d5d6.woff2",
+    "static/media/opensans-light-webfont.woff2": "https://awesomestvi.github.io/MyKlader/static/media/opensans-light-webfont.c320c2644a7f77a87257.woff2",
+    "static/media/opensans-bold-webfont.woff2": "https://awesomestvi.github.io/MyKlader/static/media/opensans-bold-webfont.f3e79b3d83d8a599df08.woff2",
+    "index.html": "https://awesomestvi.github.io/MyKlader/index.html",
+    "main.3274915b.css.map": "https://awesomestvi.github.io/MyKlader/static/css/main.3274915b.css.map",
+    "main.7704cbcf.js.map": "https://awesomestvi.github.io/MyKlader/static/js/main.7704cbcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3274915b.css",
+    "static/js/main.7704cbcf.js"
+  ]
+}
